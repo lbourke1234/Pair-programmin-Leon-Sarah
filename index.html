@@ -84,7 +84,26 @@
 
             </div>
         </div>
+        <input type="text" class="form-control mb-2" onkeyup="inputReader(event)">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+              Select
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item name-dropdown" href="#">Name</a>
+              <a class="dropdown-item username-dropdown" href="#">Username</a>
+              <a class="dropdown-item email-dropdown" href="#">Email</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="names-of-dropdown col-4"></div>
+            <div class="usernames-of-dropdown col-4"></div>
+            <div class="email-of-dropdown col-4"></div>
+          </div>
     </div>
+
+
+    
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
