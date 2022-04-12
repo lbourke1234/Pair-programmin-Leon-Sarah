@@ -134,6 +134,41 @@ const getUserAddress = async() =>{
     console.log(userArray)
    
 }
+let notSorted = true
+const sortNames = async (event) => {
+    // console.log(event)
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+
+    parsedResponse = await response.json()
+
+    let row = document.querySelector('.user-cards')
+    let names = []
+    console.log(parsedResponse)
+    parsedResponse.forEach((user, index) => {
+        // console.log(user)
+        
+        
+
+        names[index] = user.name
+        names.sort()
+        notSorted = false
+
+
+    })
+    console.log(names)
+
+    // row.innerHTML +=  ` 
+    //         <div class= "card col-4 mb-4">
+    //         <div class="card-body">
+    //             <h5 class="card-title">${user.name}</h5>
+    //             <p class="card-text">${user.username}</p>
+    //             <p class="card-text">${user.id}</p>
+    //             <p class="card-text">${user.address.city}</p>
+    //         </div>
+    //         </div>`
+    
+}
+
 window.onload = () =>{
     displayUsers()
     addEventDropdown()

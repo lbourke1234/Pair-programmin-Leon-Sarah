@@ -80,11 +80,14 @@
 
     <div class="container">
         <h1>Users </h1>
-        <div class="row">
+        <div class="row user-cards">
             <div class="card">
 
             </div>
         </div>
+
+        <button id="sorting-button" type="button" class="btn btn-outline-primary mb-3" onclick="sortNames(event)">Sort By Name</button>
+
         <input type="text" class="form-control mb-2" onkeyup="inputReader(event)">
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
